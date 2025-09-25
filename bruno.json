@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "quibble",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
