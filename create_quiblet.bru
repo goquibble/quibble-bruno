@@ -1,0 +1,22 @@
+meta {
+  name: create_quiblet
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/api/v1/quiblet/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  name: quibble
+  description: Hello there!
+  type: PUBLIC
+  nsfw: False
+}
+
+settings {
+  encodeUrl: true
+}
