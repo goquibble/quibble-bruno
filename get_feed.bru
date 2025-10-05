@@ -1,0 +1,15 @@
+meta {
+  name: get_feed
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8000/api/v1/feed
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
