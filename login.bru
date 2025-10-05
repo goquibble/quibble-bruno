@@ -1,0 +1,26 @@
+meta {
+  name: login
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8000/_allauth/browser/v1/auth/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  X-Csrftoken: nZEQktHROfSWFa2z18IAF9D8IYmBmN17
+}
+
+body:json {
+  {
+    "email": "admin@admin.com",
+    "password": "admin"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

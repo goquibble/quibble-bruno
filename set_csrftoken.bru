@@ -1,0 +1,15 @@
+meta {
+  name: set_csrftoken
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8000/api/v1/csrftoken
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

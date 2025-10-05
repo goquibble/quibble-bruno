@@ -1,0 +1,23 @@
+meta {
+  name: vote_quib
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8000/api/v1/quiblet/headcn/quib/vcacj57/which_design_is_your_favorite_let_me_know_below/vote?value=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  value: 1
+}
+
+headers {
+  X-CSRFToken: nZEQktHROfSWFa2z18IAF9D8IYmBmN17
+}
+
+settings {
+  encodeUrl: true
+}
