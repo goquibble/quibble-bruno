@@ -1,0 +1,15 @@
+meta {
+  name: get_quiblet_highlights
+  type: http
+  seq: 11
+}
+
+get {
+  url: http://localhost:8000/api/v1/quiblet/headcn/highlights
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
