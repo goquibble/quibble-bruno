@@ -1,0 +1,27 @@
+meta {
+  name: create_comment
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:8000/api/v1/quiblet/headcn/quib/vcacj57/which_design_is_your_favorite_let_me_know_below/comments
+  body: json
+  auth: inherit
+}
+
+headers {
+  X-CSRFToken: VhUvAwPCz9Y4OJWTy9ADDFZpF6AtZVYO
+}
+
+body:json {
+  {
+    "parent_path": "0",
+    "content": "This is great dude!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
